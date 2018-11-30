@@ -1,10 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Account:"/>
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_height="wrap_content"
+            android:hint="Input your account"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Password:"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Login"/>
+    </TableRow>
+
+</TableLayout>
+
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"/>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"/>
+</FrameLayout>-->
+
+
+<!--<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tool="http://schemas.android.com/tools/"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+//first
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
@@ -44,7 +102,8 @@
         android:layout_toRightOf="@+id/button3"
         android:text="Button5"/>
 
-   <!-- <Button
+//second
+    <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,9 +140,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="Button 5" />-->
+        android:text="Button 5" />
 
-</RelativeLayout>
+</RelativeLayout>-->
 
 
 <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
